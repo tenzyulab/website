@@ -198,17 +198,17 @@ footer .copyright {
     .description p.value{
         font-size: 1em;
     }
-    .fact img {
-        padding: 1em;
-        width: 48px;
-        height: 48px;
+
+/* LapTop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    #container {
+        max-width: 719px;
+        margin: 0 auto;
     }
-    .fact p.name {
-        font-size: 1em;
     }
 
 /* LapTop L */
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width : 1025px) {
 	#container {
 		display: flex;
     }
