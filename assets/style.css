@@ -206,36 +206,28 @@ footer .copyright {
     .fact p.name {
         font-size: 1em;
     }
-    .fact p.value {
-        font-size: 0.8em;
-    }
-    h3 {
-        font-size: 2em;
-    }
-    h3:first-letter {
-        font-size: 1.5em;
-    }
-}
 
-/* パソコン */
-@media only screen and (min-width:1224px) {
+/* LapTop L */
+@media only screen and (min-width:1025px) {
 	#container {
-		display: flex
+		display: flex;
     }
-    header .logo{
+
+    header .logo,
+    footer .copyright{
         width: 98%;
     }
+
 	#contents, #accounts, #profile {
-        width: 32%;
+        width: 33%;
         padding: 16px;
 	}
+    
 	.description p.name {
 		font-size: 1.2em;
 	}
+    
 	.description p.value {
-		font-size: .75em;
-    }
-    footer .copyright{
-        width: 98%;
+		font-size: .58em;
     }
 }
