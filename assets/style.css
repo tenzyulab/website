@@ -129,6 +129,14 @@ h3:first-letter {
     color: #999;
 }
 
+.description p.name {
+    font-size: 1.2em;
+}
+
+.description p.value {
+    font-size: .58em;
+}
+
 .facts {
     display: flex;
     flex-wrap: wrap;
