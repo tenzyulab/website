@@ -194,3 +194,20 @@ footer {
         font-size: 1.5em;
     }
 }
+
+/* パソコン */
+@media only screen and (min-width:1224px) {
+	#container {
+		display: flex
+	}
+	#contents, #accounts, #profile {
+        width: 32%;
+        padding: 16px;
+	}
+	.description p.name {
+		font-size: 1.2em;
+	}
+	.description p.value {
+		font-size: .75em;
+	}
+}
