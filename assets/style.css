@@ -158,3 +158,39 @@ footer {
 		font-size: .5em;
     }
 }
+
+/* iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #contents, #accounts, #profile {
+        padding: 16px;
+    }
+    .content iframe {
+        height: 512px;
+    }
+    .description {
+        padding: 3em 2em;
+    }
+    .description p.name{
+        font-size: 1.5em;
+    }
+    .description p.value{
+        font-size: 1em;
+    }
+    .fact img {
+        padding: 1em;
+        width: 48px;
+        height: 48px;
+    }
+    .fact p.name {
+        font-size: 1em;
+    }
+    .fact p.value {
+        font-size: 0.8em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    h3:first-letter {
+        font-size: 1.5em;
+    }
+}
