@@ -194,12 +194,15 @@ footer .copyright {
     #contents, #accounts, #profile {
         padding: 16px;
     }
-    .content iframe {
-        height: 512px;
+
+/* Mobile L */
+@media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
+    #container{
+        max-width: 326px;
+        margin: 0 auto;
     }
-    .description {
-        padding: 3em 2em;
     }
+
 /* Tablet */
 @media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
     #container{
