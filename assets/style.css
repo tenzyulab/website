@@ -182,17 +182,28 @@ footer .copyright {
 /* スマホ */
 @media only screen and (min-device-width:320px) and (max-device-width:480px) {
 	.description p.name {
-		font-size: 1.2em;
+/* Mobile M */
+@media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
+    #container{
+        max-width: 271px;
+        margin: 0 auto;
 	}
-	.description p.value {
-		font-size: .5em;
+
+    .description p.name {
+        font-size: 1em;
     }
+
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
 }
 
-/* iPad */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    #contents, #accounts, #profile {
-        padding: 16px;
+    .fact {
+        display: flex;
+        width: 49%;
+        align-items: center;
+    }
     }
 
 /* Mobile L */
