@@ -148,3 +148,13 @@ footer {
     font-size: 0.5em;
     color: #444;
 }
+
+/* スマホ */
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+	.description p.name {
+		font-size: 1.2em;
+	}
+	.description p.value {
+		font-size: .5em;
+    }
+}
