@@ -5,7 +5,7 @@ header {
 header .logo{
     width: 96%;
     margin: 0 0 0 auto;
-	align-items: center;
+    align-items: center;
     
 }
 
@@ -114,8 +114,6 @@ h3:first-letter {
 .facts {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
     padding: 1em;
 }
 
@@ -154,9 +152,6 @@ footer .copyright {
     width: 96%;
     text-align: right;
     align-items: center;
-    padding-right: 2.5%;
-    font-size: 0.5em;
-    color: #444;
 }
 
 /* スマホ */
@@ -209,7 +204,7 @@ footer .copyright {
 @media only screen and (min-width:1224px) {
 	#container {
 		display: flex
-	}
+    }
     header .logo{
         width: 98%;
     }
@@ -222,7 +217,7 @@ footer .copyright {
 	}
 	.description p.value {
 		font-size: .75em;
-	}
+    }
     footer .copyright{
         width: 98%;
     }
