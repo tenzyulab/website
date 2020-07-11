@@ -185,7 +185,7 @@ footer .copyright {
         max-width: 270px;
         margin: 0 auto;
     }
-    
+
     .description p.name {
         font-size: 1em;
     }
@@ -228,7 +228,7 @@ footer .copyright {
 }
 
 /* Mobile L */
-@media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
+@media only screen and (min-width : 376px) and (max-width : 425px) {
     #container{
         max-width: 326px;
         margin: 0 auto;
@@ -236,7 +236,7 @@ footer .copyright {
 }
 
 /* Tablet */
-@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+@media only screen and (min-width : 426px) and (max-width : 768px) {
     #container{
         max-width: 376px;
         margin: 0 auto;
@@ -245,7 +245,7 @@ footer .copyright {
 }
 
 /* LapTop */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
     #container {
         max-width: 719px;
         margin: 0 auto;
