@@ -1,8 +1,12 @@
 header {
     height: 44px;
-    text-align: left;
+}
+
+header .logo{
+    width: 96%;
+    margin: 0 0 0 auto;
 	align-items: center;
-    padding-left: 3%;
+    
 }
 
 header img{
@@ -142,6 +146,12 @@ h3:first-letter {
 
 footer {
     height: 20px;
+    font-size: 0.5em;
+    color: #444;
+}
+
+footer .copyright {
+    width: 96%;
     text-align: right;
     align-items: center;
     padding-right: 2.5%;
@@ -200,6 +210,9 @@ footer {
 	#container {
 		display: flex
 	}
+    header .logo{
+        width: 98%;
+    }
 	#contents, #accounts, #profile {
         width: 32%;
         padding: 16px;
@@ -210,4 +223,7 @@ footer {
 	.description p.value {
 		font-size: .75em;
 	}
+    footer .copyright{
+        width: 98%;
+    }
 }
