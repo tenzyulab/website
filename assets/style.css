@@ -179,9 +179,30 @@ footer .copyright {
     align-items: center;
 }
 
-/* スマホ */
-@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+/* Mobile S*/
+@media only screen and (max-device-width : 320px) {
+    #container{
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    
 	.description p.name {
+        font-size: 1em;
+    }
+
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
+    }
+    
+    .fact {
+        display: flex;
+        width: 49%;
+        align-items: center;
+    }
+}
+
 /* Mobile M */
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
     #container{
