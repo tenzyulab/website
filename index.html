@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/ fb# website: https://ogp.me/ns/website#">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:title" content="About Me. tenzyu.com">
     <meta property="og:url" content="https://tenzyu.com" />
@@ -16,12 +16,12 @@
     <meta name="author" content="Tenzyu Masuda" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@masudatenzyu" />
-    <meta name="msapplication-TileImage" content="https://tenzyu.com/assets/images/app_icon.png">
+    <meta name="msapplication-TileImage" content="https://tenzyu.com/assets/images/icon_app.png">
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="google" content="nositelinkssearchbox">
     <meta name="keywords" content="tenzyu, masuda, 天珠, 升田">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://tenzyu.com/assets/images/app_icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tenzyu.com/assets/images/icon_app.png" />
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="canonical" href="https://tenzyu.com" data-baseprotocol="https:" data-basehost="tenzyu.com" />
     <title>tenzyu.com</title>
@@ -31,7 +31,7 @@
             document.getElementsByTagName("body")[0].appendChild(ta);
             ta.value=txt;
             ta.select();
-            var ret = document.execCommand('copy');
+            var ret = document.execCommand("copy");
             ta.parentNode.removeChild(ta);
             alert("Copied!")
         };
@@ -40,12 +40,11 @@
     
 <!-- 意味なんてないよこんなところに -->
 
-<body>
 <div class="wrapper">
 
 
 <header>
-    <a class="logo" href="/" style="font-family: 'arial black'; color: #000; font-size: 1.5em; text-decoration: none;">tenzyu.com</a>
+    <a class="logo" href="/">tenzyu.com</a>
 </header>
 
 
@@ -116,10 +115,10 @@
 <div id="contents">
     <h3>Contents</h3>
     <div class="content">
-        <a href="https://github.com/tenzyu/mii" target="_blank"><img src="https://gh-card.dev/repos/tenzyu/mii.svg"></a>
+        <a href="https://github.com/tenzyu/mii" target="_blank" alt="github: mii"><img src="https://gh-card.dev/repos/tenzyu/mii.svg"></a>
     </div>
     <div class="content">
-        <a href="https://github.com/tenzyu/website" target="_blank"><img src="https://gh-card.dev/repos/tenzyu/website.svg"></a>
+        <a href="https://github.com/tenzyu/website" target="_blank" alt="github: website"><img src="https://gh-card.dev/repos/tenzyu/website.svg"></a>
     </div>
     <div class="content iframe">
         <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLoiZYW6bTQE_LCU-eEJWUeSMY17_D_sLz"></iframe>
@@ -193,6 +192,4 @@
 </footer>
 
 </div>
-
-</body>
 </html>

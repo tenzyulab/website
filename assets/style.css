@@ -1,18 +1,23 @@
+/* 基礎 */
 body {
+    background-color: #f6f6f6;
 	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 	font-size: 1.2em;
-	background-color: #f6f6f6;
 }
 
 .logo{
+    color: #000;
+    font-family: 'arial black', sans-serif;
+    font-size: 1.5em;
     padding-left: 16px;
+    text-decoration: none;
 }
 
 .copyright {
     color: #444;
-    font-size: 0.5em;
-    text-align: right;
+    font-size: .5em;
     padding-right: 16px;
+    text-align: right;
 }
 
 h3:first-letter {
@@ -21,38 +26,40 @@ h3:first-letter {
 
 .account p.value,
 .description p.name,
-.fact p.value{
+.fact p.value {
     color: #666;
 }
 
 .account,
-.card{
+.card {
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
 }
 
+/* アカウント一覧 */
+
 .account {
-    position: relative;
-	display: flex;
     align-items: center;
-	padding: .5em 1em;
-	margin: .2em 0;
+	display: flex;
+    margin: .2em 0;
+    padding: .5em 1em;
+    position: relative;
     z-index: 1;
 }
 
 .account a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 	z-index: 2;
 }
 
 .account img {
+    height: 48px;
 	width: 48px;
-	height: 48px;
 }
 
 .account .field {
@@ -67,12 +74,14 @@ h3:first-letter {
 	font-size: .8em;
 }
 
+/* コンテンツ一覧 */
+
 .content img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
-.content.iframe{
+.content.iframe {
     position: relative;
     width: 99%;
 }
@@ -84,38 +93,40 @@ h3:first-letter {
 }
 
 .youtube {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
 }
 
+/* プロフィール */
+
 .description {
-    display: flex;
-    text-align: center;
     align-items: center;
-    padding: 0.5em 1em;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    padding: .5em 1em;
+    text-align: center;
 }
 
 .description .icon {
-    width: 20%;
     height: auto;
-    min-width: 48px;
+    width: 20%;
     min-height: 48px;
+    min-width: 48px;
 }
 
 .description img {
-    width: 100%;
-    height: 100%;
-	border-radius: 100%;
+    border-radius: 100%;
     box-shadow: 0 0 4px #000;
+    height: 100%;
+    width: 100%;
 }
 
-.description .field{
-    width: 80%;
+.description .field {
     height: auto;
+    width: 80%;
 }
 
 .description p.value {
@@ -137,15 +148,15 @@ h3:first-letter {
 }
 
 .fact {
+    align-items: center;
 	display: flex;
     width: 33%;
-    align-items: center;
 }
 
 .fact img {
-    padding: 0.5em;
-	width: 20px;
-	height: 20px;
+    height: 20px;
+    padding: .5em;
+    width: 20px;
 }
 
 .fact .field p {
@@ -153,18 +164,20 @@ h3:first-letter {
 }
 
 .fact p.name {
-	font-size: 0.65em;
+	font-size: .65em;
 }
 
 .fact p.value {
-	font-size: 0.5em;
+	font-size: .5em;
 }
 
-/* Mobile S*/
+/* レスポンシブ対応 */
+/* Mobile S */
+
 @media only screen and (max-device-width : 320px) {
-    #container{
-        max-width: 270px;
+    #container {
         margin: 0 auto;
+        max-width: 270px;
     }
 
     .description p.name {
@@ -178,17 +191,18 @@ h3:first-letter {
     }
     
     .fact {
+        align-items: center;
         display: flex;
         width: 49%;
-        align-items: center;
     }
 }
 
 /* Mobile M */
+
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
-    #container{
-        max-width: 271px;
+    #container {
         margin: 0 auto;
+        max-width: 321px;
     }
 
     .description p.name {
@@ -202,44 +216,46 @@ h3:first-letter {
     }
     
     .fact {
+        align-items: center;
         display: flex;
         width: 49%;
-        align-items: center;
     }
 }
 
 /* Mobile L */
+
 @media only screen and (min-width : 376px) and (max-width : 425px) {
-    #container{
-        max-width: 326px;
+    #container {
         margin: 0 auto;
+        max-width: 376px;
     }
 }
 
 /* Tablet */
+
 @media only screen and (min-width : 426px) and (max-width : 768px) {
-    #container{
-        max-width: 376px;
+    #container {
         margin: 0 auto;
+        max-width: 426px;
     }
 
 }
 
 /* LapTop */
+
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
     #container {
-        max-width: 719px;
         margin: 0 auto;
+        max-width: 769px;
     }
 }
 
 /* LapTop L */
+
 @media only screen and (min-width : 1025px) {
 	#container {
 		display: flex;
     }
-
-
 
 	#contents, #accounts, #profile {
         width: 33%;
