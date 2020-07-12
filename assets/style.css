@@ -23,9 +23,10 @@ a{
     text-align: right;
 }
 
-h3:first-letter {
+h2:first-letter {
     font-size: 1.5em;
 }
+
 
 .account p.value,
 .description p.name,
