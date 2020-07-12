@@ -1,11 +1,11 @@
 /* 基礎 */
 body {
     background-color: #f6f6f6;
-	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-	font-size: 1.2em;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-size: 1.2em;
 }
 
-.logo{
+.logo {
     color: #000;
     font-family: 'arial black', sans-serif;
     font-size: 1.5em;
@@ -41,7 +41,7 @@ h3:first-letter {
 
 .account {
     align-items: center;
-	display: flex;
+    display: flex;
     margin: .2em 0;
     padding: .5em 1em;
     position: relative;
@@ -54,12 +54,12 @@ h3:first-letter {
     position: absolute;
     top: 0;
     width: 100%;
-	z-index: 2;
+    z-index: 2;
 }
 
 .account img {
     height: 48px;
-	width: 48px;
+    width: 48px;
 }
 
 .account .field {
@@ -67,11 +67,11 @@ h3:first-letter {
 }
 
 .account .field p {
-	margin: 0
+    margin: 0
 }
 
 .account p.value {
-	font-size: .8em;
+    font-size: .8em;
 }
 
 /* コンテンツ一覧 */
@@ -87,7 +87,7 @@ h3:first-letter {
 }
 
 .content.iframe:before {
-    content:"";
+    content: "";
     display: block;
     padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
 }
@@ -149,7 +149,7 @@ h3:first-letter {
 
 .fact {
     align-items: center;
-	display: flex;
+    display: flex;
     width: 33%;
 }
 
@@ -160,15 +160,15 @@ h3:first-letter {
 }
 
 .fact .field p {
-	margin: 0
+    margin: 0
 }
 
 .fact p.name {
-	font-size: .65em;
+    font-size: .65em;
 }
 
 .fact p.value {
-	font-size: .5em;
+    font-size: .5em;
 }
 
 /* レスポンシブ対応 */
@@ -189,7 +189,7 @@ h3:first-letter {
         flex-wrap: wrap;
         padding: 1em 0;
     }
-    
+
     .fact {
         align-items: center;
         display: flex;
@@ -214,7 +214,7 @@ h3:first-letter {
         flex-wrap: wrap;
         padding: 1em 0;
     }
-    
+
     .fact {
         align-items: center;
         display: flex;
@@ -253,11 +253,13 @@ h3:first-letter {
 /* LapTop L */
 
 @media only screen and (min-width : 1025px) {
-	#container {
-		display: flex;
+    #container {
+        display: flex;
     }
 
-	#contents, #accounts, #profile {
+    #contents,
+    #accounts,
+    #profile {
         width: 33%;
         padding: 16px;
     }
