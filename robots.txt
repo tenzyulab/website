@@ -1,5 +1,5 @@
 User-agent: *
 
-Allow: /
+Disallow: 
 
-sitemap:https://tenzyu.com/sitemap.xml
+Sitemap: https://tenzyu.com/sitemap.xml
