@@ -48,11 +48,16 @@ h2:first-letter {
     display: flex;
     margin: .2em 0;
     padding: .5em 1em;
+}
+
+.account,
+.linkcard {
     position: relative;
     z-index: 1;
 }
 
-.account a {
+.account a,
+.linkcard a {
     height: 100%;
     left: 0;
     position: absolute;
@@ -109,7 +114,7 @@ h2:first-letter {
 
 .description {
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
     display: flex;
     padding: .5em 1em;
     text-align: center;
@@ -268,4 +273,27 @@ h2:first-letter {
         width: 33%;
         padding: 16px;
     }
+}
+.other {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    font-size: 12px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.linkcard {
+    text-transform: uppercase;
+    border-radius: 6px;
+    height: 30px;
+    width: 100%;
+    max-width: 125px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
 }
