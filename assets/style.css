@@ -1,306 +1,306 @@
 /* 基礎 */
 body {
-    background-color: #f6f6f6;
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-    font-size: 1.2em;
+  background-color: #f6f6f6;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-size: 1.2em;
 }
 
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 header {
-    height: 44px;
+  height: 44px;
 }
 
 .logo {
-    font-family: 'arial black', sans-serif;
-    line-height: 44px;
-    margin:0;
-    padding-left: 16px;
+  font-family: 'arial black', sans-serif;
+  line-height: 44px;
+  margin: 0;
+  padding-left: 16px;
 }
 
 footer {
-    color: #444;
-    font-size: .5em;
-    padding-right: 16px;
-    text-align: right;
+  color: #444;
+  font-size: .5em;
+  padding-right: 16px;
+  text-align: right;
 }
 
 h2:first-letter {
-    font-size: 1.35em;
-    border-bottom: solid 3px #000;
+  font-size: 1.35em;
+  border-bottom: solid 3px #000;
 }
 
 
 .account p.value,
 .description p.name,
 .fact p.value {
-    color: #666;
+  color: #666;
 }
 
 .account,
 .card {
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
 }
 
 /* アカウント一覧 */
 
 .account {
-    align-items: center;
-    display: flex;
-    margin: .2em 0;
-    padding: .5em 1em;
+  align-items: center;
+  display: flex;
+  margin: .2em 0;
+  padding: .5em 1em;
 }
 
 .account,
 .linkcard {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .account a,
 .linkcard a {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .account img {
-    height: 48px;
-    width: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .account .field {
-    padding-left: 1.2em;
+  padding-left: 1.2em;
 }
 
 .account .field p {
-    margin: 0
+  margin: 0
 }
 
 .account p.value {
-    font-size: .8em;
+  font-size: .8em;
 }
 
 /* コンテンツ一覧 */
 
 .content img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .content.iframe {
-    position: relative;
-    width: 99%;
+  position: relative;
+  width: 99%;
 }
 
 .content.iframe:before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-    /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
 }
 
 .youtube {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* プロフィール */
 
 .description {
-    align-items: center;
+  align-items: center;
 
-    display: flex;
-    padding: .5em 1em;
-    text-align: center;
+  display: flex;
+  padding: .5em 1em;
+  text-align: center;
 }
 
 .description .icon {
-    height: auto;
-    width: 20%;
-    min-height: 48px;
-    min-width: 48px;
+  height: auto;
+  width: 20%;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .description img {
-    border-radius: 100%;
-    box-shadow: 0 0 4px #000;
-    height: 100%;
-    width: 100%;
+  border-radius: 100%;
+  box-shadow: 0 0 4px #000;
+  height: 100%;
+  width: 100%;
 }
 
 .description .field {
-    height: auto;
-    width: 80%;
+  height: auto;
+  width: 80%;
 }
 
 .description p.value {
-    color: #999;
+  color: #999;
 }
 
 .description p.name {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .description p.value {
-    font-size: .58em;
+  font-size: .58em;
 }
 
 .facts {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0;
 }
 
 .fact {
-    align-items: center;
-    display: flex;
-    width: 33%;
+  align-items: center;
+  display: flex;
+  width: 33%;
 }
 
 .fact img {
-    height: 20px;
-    padding: .5em;
-    width: 20px;
+  height: 20px;
+  padding: .5em;
+  width: 20px;
 }
 
 .fact .field p {
-    margin: 0
+  margin: 0
 }
 
 .fact p.name {
-    font-size: .65em;
+  font-size: .65em;
 }
 
 .fact p.value {
-    font-size: .5em;
+  font-size: .5em;
 }
 
 /* レスポンシブ対応 */
 /* Mobile S */
 
 @media only screen and (max-device-width : 320px) {
-    #container {
-        margin: 0 auto;
-        max-width: 270px;
-    }
+  #container {
+    margin: 0 auto;
+    max-width: 270px;
+  }
 
-    .description p.name {
-        font-size: 1em;
-    }
+  .description p.name {
+    font-size: 1em;
+  }
 
-    .facts {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1em 0;
-    }
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+  }
 
-    .fact {
-        align-items: center;
-        display: flex;
-        width: 49%;
-    }
+  .fact {
+    align-items: center;
+    display: flex;
+    width: 49%;
+  }
 }
 
 /* Mobile M */
 
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
-    #container {
-        margin: 0 auto;
-        max-width: 321px;
-    }
+  #container {
+    margin: 0 auto;
+    max-width: 321px;
+  }
 
-    .description p.name {
-        font-size: 1em;
-    }
+  .description p.name {
+    font-size: 1em;
+  }
 
-    .facts {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1em 0;
-    }
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+  }
 
-    .fact {
-        align-items: center;
-        display: flex;
-        width: 49%;
-    }
+  .fact {
+    align-items: center;
+    display: flex;
+    width: 49%;
+  }
 }
 
 /* Mobile L */
 
 @media only screen and (min-width : 376px) and (max-width : 425px) {
-    #container {
-        margin: 0 auto;
-        max-width: 376px;
-    }
+  #container {
+    margin: 0 auto;
+    max-width: 376px;
+  }
 }
 
 /* Tablet */
 
 @media only screen and (min-width : 426px) and (max-width : 768px) {
-    #container {
-        margin: 0 auto;
-        max-width: 426px;
-    }
+  #container {
+    margin: 0 auto;
+    max-width: 426px;
+  }
 
 }
 
 /* LapTop */
 
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
-    #container {
-        margin: 0 auto;
-        max-width: 769px;
-    }
+  #container {
+    margin: 0 auto;
+    max-width: 769px;
+  }
 }
 
 /* LapTop L */
 
 @media only screen and (min-width : 1025px) {
-    #container {
-        display: flex;
-    }
+  #container {
+    display: flex;
+  }
 
-    #contents,
-    #accounts,
-    #profile {
-        width: 33%;
-        padding: 16px;
-    }
+  #contents,
+  #accounts,
+  #profile {
+    width: 33%;
+    padding: 16px;
+  }
 }
 
 .other {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    font-size: 12px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  font-size: 12px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .linkcard {
-    text-transform: uppercase;
-    border-radius: 6px;
-    height: 30px;
-    width: 100%;
-    max-width: 125px;
-    line-height: 30px;
-    margin-left: 10px;
-    margin-right: 12px;
-    background-color: #fff;
-    box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  border-radius: 6px;
+  height: 30px;
+  width: 100%;
+  max-width: 125px;
+  line-height: 30px;
+  margin-left: 10px;
+  margin-right: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
 }
