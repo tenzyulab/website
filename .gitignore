@@ -1,5 +1,6 @@
 _*
 
 dev/
+.vscode/
 
 .DS_Store
