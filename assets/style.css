@@ -10,9 +10,14 @@ a {
     text-decoration: none;
 }
 
+header {
+    height: 44px;
+}
+
 .logo {
     font-family: 'arial black', sans-serif;
-    margin: 0;
+    line-height: 44px;
+    margin:0;
     padding-left: 16px;
 }
 
@@ -24,7 +29,8 @@ a {
 }
 
 h2:first-letter {
-    font-size: 1.5em;
+    font-size: 1.35em;
+    border-bottom: solid 3px #000;
 }
 
 
@@ -274,6 +280,7 @@ h2:first-letter {
         padding: 16px;
     }
 }
+
 .other {
     display: flex;
     align-items: center;
