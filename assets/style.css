@@ -11,14 +11,13 @@ a {
 }
 
 header {
+  font-family: "arial black", sans-serif;
   height: 44px;
+  padding-left: 16px;
 }
 
-.logo {
-  font-family: 'arial black', sans-serif;
-  line-height: 44px;
+.headerLogo {
   margin: 0;
-  padding-left: 16px;
 }
 
 footer {
@@ -29,19 +28,16 @@ footer {
 }
 
 h2:first-letter {
-  font-size: 1.35em;
   border-bottom: solid 3px #000;
+  font-size: 1.35em;
 }
 
 
-.account p.value,
-.description p.name,
-.fact p.value {
+.account p.value, .description p.name, .fact p.value {
   color: #666;
 }
 
-.account,
-.card {
+.account, .card {
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
@@ -56,14 +52,12 @@ h2:first-letter {
   padding: .5em 1em;
 }
 
-.account,
-.linkcard {
+.account, .linkcard {
   position: relative;
   z-index: 1;
 }
 
-.account a,
-.linkcard a {
+.account a, .linkcard a {
   height: 100%;
   left: 0;
   position: absolute;
@@ -82,7 +76,7 @@ h2:first-letter {
 }
 
 .account .field p {
-  margin: 0
+  margin: 0;
 }
 
 .account p.value {
@@ -120,7 +114,6 @@ h2:first-letter {
 
 .description {
   align-items: center;
-
   display: flex;
   padding: .5em 1em;
   text-align: center;
@@ -128,9 +121,9 @@ h2:first-letter {
 
 .description .icon {
   height: auto;
-  width: 20%;
   min-height: 48px;
   min-width: 48px;
+  width: 20%;
 }
 
 .description img {
@@ -176,7 +169,7 @@ h2:first-letter {
 }
 
 .fact .field p {
-  margin: 0
+  margin: 0;
 }
 
 .fact p.name {
@@ -254,7 +247,6 @@ h2:first-letter {
     margin: 0 auto;
     max-width: 426px;
   }
-
 }
 
 /* LapTop */
@@ -273,34 +265,32 @@ h2:first-letter {
     display: flex;
   }
 
-  #contents,
-  #accounts,
-  #profile {
-    width: 33%;
+  #contents, #accounts, #profile {
     padding: 16px;
+    width: 33%;
   }
 }
 
 .other {
-  display: flex;
   align-items: center;
-  text-align: center;
-  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  display: flex;
   font-size: 12px;
   margin: 0 auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  text-align: center;
+  width: 90%;
 }
 
 .linkcard {
-  text-transform: uppercase;
+  background-color: #fff;
   border-radius: 6px;
+  box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
   height: 30px;
-  width: 100%;
-  max-width: 125px;
   line-height: 30px;
   margin-left: 10px;
   margin-right: 12px;
-  background-color: #fff;
-  box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
+  max-width: 125px;
+  text-transform: uppercase;
+  width: 100%;
 }
