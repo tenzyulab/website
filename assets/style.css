@@ -142,7 +142,7 @@ img {
 }
 
 .bio-description {
-  font-size: .8em;
+  font-size: .5em;
 }
 
 .btn-card {
@@ -159,9 +159,8 @@ img {
   border-radius: 6px;
   height: 30px;
   line-height: 30px;
-  margin: 0 auto;
-  max-width: 125px;
-  width: 100%;
+  margin: 0 10px;
+  width: 90%;
 }
 
 .fact-card {
@@ -214,10 +213,6 @@ img {
     max-width: 270px;
   }
 
-  .bio-description {
-    font-size: 1em;
-  }
-
   .l-fact-list {
     display: flex;
     flex-wrap: wrap;
@@ -237,10 +232,6 @@ img {
   .l-container {
     margin: 0 auto;
     max-width: 321px;
-  }
-
-  .bio-description {
-    font-size: 1em;
   }
 
   .l-fact-list {
