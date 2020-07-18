@@ -59,7 +59,12 @@ img {
 
 .linkcard {
   position: relative;
+  transition: background-color .05s ease-out;
   z-index: 1;
+}
+
+.linkcard:hover {
+  background-color: #eee;
 }
 
 .linkcard a {
