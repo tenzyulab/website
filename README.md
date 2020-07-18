@@ -5,8 +5,8 @@ I also plan to create a portfolio and blog in the near future.
 
 ## Web ScreenShots
 
-<img src="assets/images/screenshot-sp.png" height="auto" width="30%" />
-<img src="assets/images/screenshot-pc.jpg" height="auto" width="65%" />
+<img src="assets/images/screenshot-sp.png" height="auto" width="50%" />
+<img src="assets/images/screenshot-pc.jpg" height="auto" width="95%" />
 
 (generated on July 18)
 
