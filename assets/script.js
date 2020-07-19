@@ -4,6 +4,7 @@ function doCopyDiscordId() {
   var bodyElm = document.getElementsByTagName("body")[0];
   bodyElm.appendChild(ta);
   ta.select();
+  ta.setSelectionRange(0, 99999);
   var result = document.execCommand("copy");
   bodyElm.removeChild(ta);
   if (result) {
