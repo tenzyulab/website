@@ -177,18 +177,22 @@ a, button {
 }
 
 .fact-card {
-  align-items: center;
   display: flex;
   padding-bottom: 10px;
   width: 33%;
 }
 
-.fact-card img {
-  height: 20px;
+.fact-icon {
+  align-items: center;
+  height: 24px;
   padding: .5em;
-  width: 20px;
+  width: 24px;
 }
 
+.fact-meta {
+  align-items: center;
+  line-height: 1;
+}
 .fact-name {
   font-size: .8em;
 }
