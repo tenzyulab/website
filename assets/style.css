@@ -32,11 +32,17 @@ img {
 
 /* レイアウト */
 .l-header {
-  height: 48px;
+  align-items: center;
+  background-color: rgba(246,246,246,.9);
+  height: 64px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 .l-container {
   padding: 0 16px;
+  padding-top: 64px;
 }
 
 .l-fact-list {
@@ -53,7 +59,7 @@ img {
 /* モジュール */
 .header-logo {
   font-family: "arial black", sans-serif;
-  margin: 0;
+  font-size: 24px;
   padding-left: 32px;
 }
 
