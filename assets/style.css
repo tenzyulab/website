@@ -106,8 +106,14 @@ a, button {
   width: 48px;
 }
 
+.contents {
+  margin: .2em 0;
+  padding: 16px;
+}
+
 .youtube {
   height: 0;
+  margin: .2em 0;
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
