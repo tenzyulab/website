@@ -1,9 +1,7 @@
 /* ベーススタイル */
 body {
   background-color: #f6f6f6;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
 }
 
 a {
@@ -45,7 +43,7 @@ a, button {
 }
 
 .l-container {
-  padding: 0 16px;
+  margin: 0 16px;
   padding-top: 64px;
 }
 
@@ -62,7 +60,7 @@ a, button {
 
 /* モジュール */
 .header-logo {
-  font-family: "arial black", sans-serif;
+  font-family: "arial black", "Helvetica Neue", sans-serif;
   font-size: 24px;
   padding-left: 32px;
 }
