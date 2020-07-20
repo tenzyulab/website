@@ -37,6 +37,8 @@ a, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 /**
  * Layout Styles
  * The style of the chunk position is written here.
@@ -59,6 +61,8 @@ a, button {
   border-top: 1px solid #ccc;
   height: 32px;
 }
+
+
 
 /**
  * Component Styles
@@ -228,6 +232,8 @@ picture img {
   text-align: right;
 }
 
+
+
 /**
  * State Styles
  * The style involved in the state is written here.
@@ -239,6 +245,8 @@ picture img {
 .linkcard:hover {
   background-color: #eee;
 }
+
+
 
 /**
  * Theme Styles
@@ -253,22 +261,27 @@ picture img {
   box-shadow: 0 0 1px rgba(0, 0, 0, .4);
 }
 
-/* レスポンシブ対応 */
-/* Mobile S */
 
+
+/**
+ * Responsive Styles
+ * The style for responsive design is written here.
+ */
+
+/* Mobile S */
 @media only screen and (max-device-width : 320px) {
   .l-container {
     margin: 0 auto;
-    max-width: 270px;
+    max-width: 300px;
   }
 
-  .l-fact-list {
+  .fact-list {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 0;
   }
 
-  .fact-card {
+  .fact {
     align-items: center;
     display: flex;
     width: 49%;
@@ -276,55 +289,54 @@ picture img {
 }
 
 /* Mobile M */
-
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
   .l-container {
     margin: 0 auto;
-    max-width: 321px;
+    max-width: 301px;
   }
 
-  .l-fact-list {
+  .fact-list {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 0;
   }
 
-  .fact-card {
+  .fact {
     align-items: center;
     display: flex;
     width: 49%;
   }
 }
 
-/* Mobile L */
 
+/* Mobile L */
 @media only screen and (min-width : 376px) and (max-width : 425px) {
   .l-container {
     margin: 0 auto;
-    max-width: 376px;
+    max-width: 356px;
   }
 }
 
-/* Tablet */
 
+/* Tablet */
 @media only screen and (min-width : 426px) and (max-width : 768px) {
   .l-container {
     margin: 0 auto;
-    max-width: 426px;
+    max-width: 386px;
   }
 }
 
-/* LapTop */
 
+/* LapTop */
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
   .l-container {
     margin: 0 auto;
-    max-width: 769px;
+    max-width: 709px;
   }
 }
 
-/* LapTop L */
 
+/* LapTop L */
 @media only screen and (min-width : 1025px) {
   .l-container {
     display: flex;
