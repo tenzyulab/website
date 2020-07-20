@@ -36,6 +36,7 @@ a, button {
 .l-header {
   align-items: center;
   background-color: rgba(246,246,246,.9);
+  border-bottom: 1px solid #ccc;
   height: 64px;
   position: fixed;
   width: 100%;
@@ -87,7 +88,7 @@ a, button {
 
 .shadow {
   border-radius: 6px;
-  box-shadow: 0 0 .8px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
 }
 
 .account-card {
