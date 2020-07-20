@@ -1,4 +1,7 @@
-/* ベーススタイル */
+/**
+ * Base Styles
+ * The overall style is written here. 
+ */
 body {
   background-color: #f6f6f6;
   font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
@@ -14,8 +17,10 @@ h2:first-letter {
   font-size: 1.35em;
 }
 
-h3 {
+h3, h4 {
+  font-weight: 400;
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -32,7 +37,10 @@ a, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* レイアウト */
+/**
+ * Layout Styles
+ * The style of the chunk position is written here.
+ */
 .l-header {
   align-items: center;
   background-color: rgba(246,246,246,.9);
@@ -47,18 +55,20 @@ a, button {
   padding-top: 64px;
 }
 
-.l-fact-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: .5em 0;
-}
-
 .l-footer {
   border-top: 1px solid #ccc;
   height: 32px;
 }
 
-/* モジュール */
+/**
+ * Component Styles
+ * The component style is written here.
+ */
+.card {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
 .header-line {
   border-bottom: 1px solid #ccc;
   margin: 0 16px;
@@ -72,12 +82,7 @@ a, button {
 
 .linkcard {
   position: relative;
-  transition: background-color .05s ease-out;
   z-index: 1;
-}
-
-.linkcard:hover {
-  background-color: #eee;
 }
 
 .linkcard a, .linkcard button {
@@ -90,14 +95,8 @@ a, button {
   z-index: 2;
 }
 
-.shadow {
-  border-radius: 6px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
-}
-
 .account-card {
   align-items: center;
-  background-color: #fff;
   display: flex;
   margin: .2em 0;
   padding: .5em 1em;
@@ -107,11 +106,6 @@ a, button {
   height: 48px;
   padding-right: 1.6em;
   width: 48px;
-}
-
-.contents {
-  margin: .2em 0;
-  padding: 16px;
 }
 
 .youtube {
@@ -131,22 +125,23 @@ a, button {
   width: 100% !important;
 }
 
-.bio-card {
+/* bio-group */
+.bio-group {
   align-items: center;
   display: flex;
-  padding: .5em 1em;
+  padding: 6px 12px;
 }
 
-.picture {
+.bio-icon {
   height: auto;
-  max-height: 80px;
-  max-width: 80px;
-  min-height: 48px;
-  min-width: 48px;
-  width: 20%;
+  max-height: 128px;
+  max-width: 128px;
+  min-height: 64px;
+  min-width: 64px;
+  width: 30%;
 }
 
-.picture img {
+picture img {
   border-radius: 100%;
   box-shadow: 0 0 4px #000;
 }
@@ -167,41 +162,56 @@ a, button {
   font-size: .5em;
 }
 
-.btn-card {
-  align-items: center;
+/* btn-group */
+.btn-list {
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   display: flex;
-  font-size: 12px;
-  padding-bottom: 10px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 8px 0;
 }
 
 .btn {
-  border: 1px solid rgba(0, 0, 0, .1);
   border-radius: 6px;
   height: 30px;
   line-height: 30px;
-  margin: 0 10px;
-  width: 90%;
+  margin: 0 6px;
+  max-width: 256px;
+  width: 100%;
 }
 
-.fact-card {
+.btn-name {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* fact-group */
+.fact-list {
   display: flex;
-  padding-bottom: 10px;
+  flex-wrap: wrap;
+  margin: 16px auto;
+}
+
+.fact {
+  display: flex;
   width: 33%;
 }
 
 .fact-icon {
   align-items: center;
   height: 24px;
-  padding: .5em;
+  min-height: 24px;
+  min-width: 24x;
+  padding-right: 6px;
   width: 24px;
 }
 
 .fact-meta {
   align-items: center;
   line-height: 1;
+  padding-bottom: 12px;
 }
+
 .fact-name {
   font-size: .8em;
 }
@@ -218,17 +228,29 @@ a, button {
   text-align: right;
 }
 
-/* テーマ */
-.t-sns-name {
-  font-weight: 400;
+/**
+ * State Styles
+ * The style involved in the state is written here.
+ */
+.linkcard {
+  transition: background-color .05s ease-out;
 }
 
+.linkcard:hover {
+  background-color: #eee;
+}
+
+/**
+ * Theme Styles
+ * The style of the theme, mainly related to color is written here.
+ */
 .t-color-666 {
   color: #666;
 }
 
-.t-bg-white {
+.t-card {
   background-color: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
 }
 
 /* レスポンシブ対応 */
