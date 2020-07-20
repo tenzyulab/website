@@ -36,8 +36,7 @@ a, button {
 .l-header {
   align-items: center;
   background-color: rgba(246,246,246,.9);
-  border-bottom: 1px solid #ccc;
-  height: 64px;
+  height: 63px;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -60,6 +59,11 @@ a, button {
 }
 
 /* モジュール */
+.header-line {
+  border-bottom: 1px solid #ccc;
+  margin: 0 16px;
+}
+
 .header-logo {
   font-family: "arial black", "Helvetica Neue", sans-serif;
   font-size: 24px;
