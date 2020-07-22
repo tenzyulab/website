@@ -35,6 +35,9 @@ a, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
 }
 
+button {
+  cursor: pointer;
+}
 
 
 /**
