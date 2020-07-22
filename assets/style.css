@@ -164,31 +164,34 @@ picture img {
 .fact-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px auto;
+  margin: 16px 0 0;
 }
 
 .fact {
+  align-items: center;
   display: flex;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
   width: 33%;
 }
 
 .fact-icon {
-  align-items: center;
-  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
   min-height: 24px;
-  min-width: 24x;
-  padding-right: 6px;
-  width: 24px;
+  min-width: 24px;
+  padding-right: 8px;
 }
 
 .fact-meta {
   align-items: center;
   line-height: 1;
-  padding-bottom: 12px;
 }
 
 .fact-name {
-  font-size: .8em;
+  display: block;
+  font-size: .75em;
 }
 
 .fact-value {
@@ -371,8 +374,13 @@ picture img {
     margin: 0 auto;
     max-width: 356px;
   }
-}
 
+  .fact {
+    align-items: center;
+    display: flex;
+    width: 49%;
+  }
+}
 
 /* Tablet */
 @media only screen and (min-width : 426px) and (max-width : 768px) {
