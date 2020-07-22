@@ -276,7 +276,7 @@ h2::first-letter {
 
 /* header */
 .l-header {
-  background-color: rgba(246,246,246,.9);
+  background-color: rgba(255,255,255,.8);
 }
 
 .header-line {
@@ -305,7 +305,7 @@ picture img {
   color: #666;
 }
 
-/* header */
+/* footer */
 .l-footer {
   border-top-color: #ccc;
 }
