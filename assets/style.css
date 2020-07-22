@@ -111,6 +111,7 @@ button {
 
 .bio-icon {
   height: auto;
+  margin-right: 1em;
   max-height: 128px;
   max-width: 128px;
   min-height: 64px;
@@ -125,7 +126,6 @@ picture img {
 .bio-meta {
   height: auto;
   margin: 0 auto;
-  padding-left: 2em;
   width: 75%;
 }
 
