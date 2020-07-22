@@ -1,19 +1,17 @@
 /**
  * Base Styles
- * The overall style is written here. 
+ * The overall tags style is written here. 
  */
 body {
-  background-color: #f6f6f6;
   font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
 h2:first-letter {
-  border-bottom: solid 3px #000;
+  border-bottom: solid 3px;
   font-size: 1.35em;
 }
 
@@ -34,7 +32,7 @@ img {
 }
 
 a, button {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
 }
 
 
@@ -45,7 +43,6 @@ a, button {
  */
 .l-header {
   align-items: center;
-  background-color: rgba(246,246,246,.9);
   height: 63px;
   position: fixed;
   width: 100%;
@@ -58,7 +55,7 @@ a, button {
 }
 
 .l-footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid;
   height: 32px;
 }
 
@@ -68,20 +65,11 @@ a, button {
  * Component Styles
  * The component style is written here.
  */
+
+/* overall component */
 .card {
   border-radius: 6px;
-  padding: 8px 16px;
-}
-
-.header-line {
-  border-bottom: 1px solid #ccc;
-  margin: 0 16px;
-}
-
-.header-logo {
-  font-family: "arial black", "Helvetica Neue", sans-serif;
-  font-size: 24px;
-  padding-left: 32px;
+  padding: 16px;
 }
 
 .linkcard {
@@ -99,34 +87,16 @@ a, button {
   z-index: 2;
 }
 
-.account-card {
-  align-items: center;
-  display: flex;
-  margin: .2em 0;
-  padding: .5em 1em;
+/* header */
+.header-logo {
+  font-family: "arial black", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  padding-left: 32px;
 }
 
-.account-icon {
-  height: 48px;
-  padding-right: 1.6em;
-  width: 48px;
-}
-
-.youtube {
-  height: 0;
-  margin: .2em 0;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-  width: 100%;
-}
-
-.youtube iframe {
-  height: 100% !important;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100% !important;
+.header-line {
+  border-bottom: 1px solid;
+  margin: 0 16px;
 }
 
 /* bio-group */
@@ -147,11 +117,9 @@ a, button {
 
 picture img {
   border-radius: 100%;
-  box-shadow: 0 0 4px #000;
 }
 
 .bio-meta {
-  color: #999;
   height: auto;
   margin: 0 auto;
   padding-left: 2em;
@@ -168,7 +136,7 @@ picture img {
 
 /* btn-group */
 .btn-list {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid;
   display: flex;
   margin: 0 auto;
   padding: 8px 0;
@@ -221,12 +189,47 @@ picture img {
 }
 
 .fact-value {
-  color: #666;
   font-size: .5em;
 }
 
+/* content-group */
+.content-list {
+  margin-bottom: 0;
+}
+
+.youtube {
+  height: 0;
+  margin: .2em 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.youtube iframe {
+  height: 100% !important;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+}
+
+/* account-group */
+.account {
+  align-items: center;
+  display: flex;
+  margin: .2em 0;
+  padding: .5em 1em;
+}
+
+.account-icon {
+  height: 48px;
+  padding-right: 1.6em;
+  width: 48px;
+}
+
+/* footer */
 .copyright {
-  color: #444;
   font-size: .5em;
   padding-right: 32px;
   text-align: right;
@@ -252,13 +255,63 @@ picture img {
  * Theme Styles
  * The style of the theme, mainly related to color is written here.
  */
-.t-color-666 {
+
+/* overall theme */
+body {
+  background-color: #fefefe;
+}
+
+a {
+  color: #000;
+}
+
+h2::first-letter {
+  border-bottom-color: #000;
+}
+
+.card, .btn {
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+}
+
+/* header */
+.l-header {
+  background-color: rgba(246,246,246,.9);
+}
+
+.header-line {
+  border-bottom-color: #ccc;
+}
+
+/* profile */
+picture img {
+  box-shadow: 0 0 4px #000;
+}
+
+.bio-meta {
+  color: #999;
+}
+
+.btn-list {
+  border-bottom-color: rgba(0, 0, 0, .1);
+}
+
+.fact-value {
   color: #666;
 }
 
-.t-card {
-  background-color: #fff;
-  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+/* accounts */
+.account-value {
+  color: #666;
+}
+
+/* header */
+.l-footer {
+  border-top-color: #ccc;
+}
+
+.copyright {
+  color: #444;
 }
 
 
