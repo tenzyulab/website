@@ -261,7 +261,7 @@ picture img {
 
 /* overall theme */
 body {
-  background-color: #fefefe;
+  background-color: #f6f6f6;
 }
 
 a {
@@ -279,7 +279,7 @@ h2::first-letter {
 
 /* header */
 .l-header {
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(246,246,246,.9);
 }
 
 .header-line {
