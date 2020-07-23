@@ -44,7 +44,7 @@ button {
  * Layout Styles
  * The style of the chunk position is written here.
  */
-.l-header {
+header {
   align-items: center;
   height: 63px;
   position: fixed;
@@ -52,12 +52,12 @@ button {
   z-index: 5;
 }
 
-.l-container {
+main {
   margin: 0 16px;
   padding-top: 64px;
 }
 
-.l-footer {
+footer {
   border-top: 1px solid;
   height: 32px;
 }
@@ -281,7 +281,7 @@ h2::first-letter {
 }
 
 /* header */
-.l-header {
+header {
   background-color: rgba(246,246,246,.9);
 }
 
@@ -312,7 +312,7 @@ picture img {
 }
 
 /* footer */
-.l-footer {
+footer {
   border-top-color: #ccc;
 }
 
@@ -329,7 +329,7 @@ picture img {
 
 /* Mobile S */
 @media only screen and (max-device-width : 320px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 300px;
   }
@@ -343,7 +343,7 @@ picture img {
 
 /* Mobile M */
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 301px;
   }
@@ -357,7 +357,7 @@ picture img {
 
 /* Mobile L */
 @media only screen and (min-width : 376px) and (max-width : 425px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 356px;
   }
@@ -371,7 +371,7 @@ picture img {
 
 /* Tablet */
 @media only screen and (min-width : 426px) and (max-width : 768px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 386px;
   }
@@ -390,14 +390,14 @@ picture img {
     float: right;
     margin-right: 2%;
   }
-  .l-footer {
+  footer {
     clear: both;
   }
 }
 
 /* LapTop L */
 @media only screen and (min-width : 1025px) {
-  .l-container {
+  main {
     display: flex;
   }
   .l-profile, .l-contents, .l-accounts {
