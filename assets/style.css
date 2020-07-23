@@ -200,6 +200,11 @@ picture img {
 }
 
 /* content-group */
+.content-type {
+  border-bottom: 2px solid;
+  padding-bottom: 8px;
+}
+
 .content-list {
   margin-bottom: 0;
 }
@@ -305,6 +310,11 @@ picture img {
 
 .fact-value {
   color: #666;
+}
+
+/* contents */
+.content-type {
+  border-bottom-color: #ccc;
 }
 
 /* accounts */
