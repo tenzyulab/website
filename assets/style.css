@@ -46,15 +46,17 @@ button {
  */
 header {
   align-items: center;
+  display: flex;
   height: 63px;
-  position: fixed;
-  width: 100%;
+  left: 0;
+  margin: 0 16px;
+  position: sticky;
+  top: 0;
   z-index: 5;
 }
 
 main {
   margin: 0 16px;
-  padding-top: 64px;
 }
 
 footer {
@@ -91,15 +93,14 @@ footer {
 }
 
 /* header */
+header {
+  border-bottom: 1px solid;
+}
+
 .header-logo {
   font-family: "arial black", "Helvetica Neue", sans-serif;
   font-size: 24px;
-  padding-left: 32px;
-}
-
-.header-line {
-  border-bottom: 1px solid;
-  margin: 0 16px;
+  padding-left: 16px;
 }
 
 /* bio-group */
@@ -289,9 +290,6 @@ h2::first-letter {
 /* header */
 header {
   background-color: rgba(246,246,246,.9);
-}
-
-.header-line {
   border-bottom-color: #ccc;
 }
 
