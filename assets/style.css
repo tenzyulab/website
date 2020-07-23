@@ -36,28 +36,35 @@ a, button {
 }
 
 button {
+  border: none;
   cursor: pointer;
+  outline: none;
+  text-align: left;
+  width: 100%;
 }
+
 
 
 /**
  * Layout Styles
  * The style of the chunk position is written here.
  */
-.l-header {
+header {
   align-items: center;
+  display: flex;
   height: 63px;
-  position: fixed;
-  width: 100%;
+  left: 0;
+  margin: 0 16px;
+  position: sticky;
+  top: 0;
   z-index: 5;
 }
 
-.l-container {
+main {
   margin: 0 16px;
-  padding-top: 64px;
 }
 
-.l-footer {
+footer {
   border-top: 1px solid;
   height: 32px;
 }
@@ -75,31 +82,19 @@ button {
   padding: 16px;
 }
 
-.linkcard {
-  position: relative;
-  z-index: 1;
-}
-
-.linkcard a, .linkcard button {
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2;
+.bottom-spacer {
+  margin-bottom: 8px;
 }
 
 /* header */
+header {
+  border-bottom: 1px solid;
+}
+
 .header-logo {
   font-family: "arial black", "Helvetica Neue", sans-serif;
   font-size: 24px;
-  padding-left: 32px;
-}
-
-.header-line {
-  border-bottom: 1px solid;
-  margin: 0 16px;
+  padding-left: 16px;
 }
 
 /* bio-group */
@@ -130,6 +125,7 @@ picture img {
 }
 
 .bio-name {
+  display: block;
   font-size: 1.2em;
 }
 
@@ -199,6 +195,11 @@ picture img {
 }
 
 /* content-group */
+.content-type {
+  border-bottom: 2px solid;
+  padding-bottom: 8px;
+}
+
 .content-list {
   margin-bottom: 0;
 }
@@ -247,11 +248,11 @@ picture img {
  * State Styles
  * The style involved in the state is written here.
  */
-.linkcard {
+.btn, .account {
   transition: background-color .05s ease-out;
 }
 
-.linkcard:hover {
+.btn:hover, .account:hover {
   background-color: #eee;
 }
 
@@ -281,11 +282,8 @@ h2::first-letter {
 }
 
 /* header */
-.l-header {
+header {
   background-color: rgba(246,246,246,.9);
-}
-
-.header-line {
   border-bottom-color: #ccc;
 }
 
@@ -306,13 +304,18 @@ picture img {
   color: #666;
 }
 
+/* contents */
+.content-type {
+  border-bottom-color: #ccc;
+}
+
 /* accounts */
 .account-value {
   color: #666;
 }
 
 /* footer */
-.l-footer {
+footer {
   border-top-color: #ccc;
 }
 
@@ -329,7 +332,7 @@ picture img {
 
 /* Mobile S */
 @media only screen and (max-device-width : 320px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 300px;
   }
@@ -343,7 +346,7 @@ picture img {
 
 /* Mobile M */
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 301px;
   }
@@ -357,7 +360,7 @@ picture img {
 
 /* Mobile L */
 @media only screen and (min-width : 376px) and (max-width : 425px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 356px;
   }
@@ -371,7 +374,7 @@ picture img {
 
 /* Tablet */
 @media only screen and (min-width : 426px) and (max-width : 768px) {
-  .l-container {
+  main {
     margin: 0 auto;
     max-width: 386px;
   }
@@ -390,14 +393,14 @@ picture img {
     float: right;
     margin-right: 2%;
   }
-  .l-footer {
+  footer {
     clear: both;
   }
 }
 
 /* LapTop L */
 @media only screen and (min-width : 1025px) {
-  .l-container {
+  main {
     display: flex;
   }
   .l-profile, .l-contents, .l-accounts {
