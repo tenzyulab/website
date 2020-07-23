@@ -82,6 +82,10 @@ footer {
   z-index: 1;
 }
 
+.bottom-spacer {
+  margin-bottom: 8px;
+}
+
 .linkcard a, .linkcard button {
   height: 100%;
   left: 0;
