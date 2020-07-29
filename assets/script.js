@@ -14,7 +14,7 @@ function doCopyDiscordId() {
   }
 
   function reset() {
-    area.innerText = "Click to copy my ID."
+    area.innerText = "Click to copy my tag."
   }
 }
 
