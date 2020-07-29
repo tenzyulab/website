@@ -382,19 +382,25 @@ footer {
 
 /* LapTop */
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
-  .l-contents, .l-accounts, .l-profile {
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 150vw; /* ビューポート(幅)を基準に表示高を指定 */
+  }
+
+  .l-profile, .l-contents, .l-accounts {
+    padding: 0 2%;
     width: 46%;
   }
-  .l-profile, .l-accounts {
-    float: left;
-    margin-left: 2%;
+
+  .l-profile {
+    order: 1;
+  }
+  .l-accounts {
+    order: 2;
   }
   .l-contents {
-    float: right;
-    margin-right: 2%;
-  }
-  footer {
-    clear: both;
+    order: 3;
   }
 }
 
