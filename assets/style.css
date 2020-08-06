@@ -61,7 +61,8 @@ header {
 }
 
 main {
-  margin: 0 16px;
+  max-width: 100em;
+  margin: 16px auto;
 }
 
 footer {
