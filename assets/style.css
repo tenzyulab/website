@@ -61,7 +61,8 @@ header {
 }
 
 main {
-  margin: 0 16px;
+  max-width: 100em;
+  margin: 16px auto;
 }
 
 footer {
@@ -146,7 +147,6 @@ picture img {
   height: 30px;
   line-height: 30px;
   margin: 0 6px;
-  max-width: 256px;
   width: 100%;
 }
 
