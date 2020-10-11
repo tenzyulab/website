@@ -61,8 +61,8 @@ header {
 }
 
 main {
+  margin: 8px auto;
   max-width: 100em;
-  margin: 16px auto;
 }
 
 footer {
@@ -127,11 +127,11 @@ picture img {
 
 .bio-name {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.25rem;
 }
 
 .bio-description {
-  font-size: .5em;
+  font-size: .85rem;
 }
 
 /* btn-group */
@@ -332,9 +332,13 @@ footer {
 
 /* Mobile S */
 @media only screen and (max-device-width : 320px) {
+  header {
+    margin: 0 0;
+    padding: 0 16px;
+  }
   main {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 304px;
   }
 
   .fact {
@@ -348,7 +352,7 @@ footer {
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
   main {
     margin: 0 auto;
-    max-width: 301px;
+    max-width: 305px;
   }
 
   .fact {
@@ -362,7 +366,7 @@ footer {
 @media only screen and (min-width : 376px) and (max-width : 425px) {
   main {
     margin: 0 auto;
-    max-width: 356px;
+    max-width: 360px;
   }
 
   .fact {
@@ -376,7 +380,7 @@ footer {
 @media only screen and (min-width : 426px) and (max-width : 768px) {
   main {
     margin: 0 auto;
-    max-width: 386px;
+    max-width: 410px;
   }
 }
 
