@@ -1,6 +1,6 @@
 function doCopyDiscordId() {
   var ta = document.createElement("textarea");
-  ta.value = "tenzyu#9999";
+  ta.value = "tenzyu#9234";
   var bodyElm = document.getElementsByTagName("body")[0];
   bodyElm.appendChild(ta);
   ta.select();
